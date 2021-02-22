@@ -1,5 +1,5 @@
-# SPY2.150
-Reproducibility results for paper [DOI: 10.1002-SPY2.150](https://onlinelibrary.wiley.com/doi/full/10.1002/spy2.150)
+# Reproducibility files for paper DOI: 10.1002/SPY2.150
+Paper [DOI: 10.1002/SPY2.150](https://onlinelibrary.wiley.com/doi/full/10.1002/spy2.150)
 
 ## Paper details
 Title: _Systematic review of features for co‐simulating security incidents in Cyber‐Physical Systems_
