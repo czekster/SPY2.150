@@ -34,7 +34,7 @@ Journal: [Security and Privacy](https://onlinelibrary.wiley.com/journal/24756725
 
 #08 - [Melody: Synthesized Datasets for Evaluating Intrusion Detection Systems for the Smart Grid](https://ieeexplore.ieee.org/abstract/document/8247855); 2017; IEEE; 1061-1072. 
 
-#09 - [Co-simulation for cyber security analysis: Data attacks against energy management system](https://ieeexplore.ieee.org/abstract/document/8340668). IEEE International Conference on Smart Grid Communications (SmartGridComm). 2017. IEEE; 253-258.
+#09 - [Co-simulation for cyber security analysis: Data attacks against energy management system](https://ieeexplore.ieee.org/abstract/document/8340668). 2017; IEEE; 253-258.
 
 #10 - [Developing Cyber-physical Experimental Capabilities for the Security Analysis of the Future Smart Grid](https://ieeexplore.ieee.org/abstract/document/6162766). 2011; IEEE; 1-7; IEEE. 
 
