@@ -1,0 +1,39 @@
+Summary of the SRL
+==================
+
+a) Research Question: "what features are needed in a tool in order to simulate security incidents in smart infrastructures?"
+b) Search string:
+( ("simulation" OR "co-simulation" OR "tools" OR "framework" OR "software") AND
+  ("security"   OR "incident" OR "attack" OR "vulnerability") AND 
+  ("smart"      OR "infrastructure" OR "cyber-physical system" OR "CPS") )
+c) Interval: 10 years (since 2009)
+d) Scientific libraries (computing): 
+   1) Google Scholar - https://scholar.google.com/
+   2) ACM Portal     - http://portal.acm.org/
+   3) IEEExplore     - http://ieeexplore.ieee.org/
+   4) Scopus         - https://www.scopus.com/
+e) Inclusion criteria:
+   - must use simulation
+   - must be directed towards security
+   - must have an application or case study in smart infrastructures
+   - use of both power and network communications
+f) Exclusion criteria:
+   - low level domain application (e.g. work on PMU or smart meters details)
+   - not used the underlying communication network or integrated with the power simulator
+   - theoretical frameworks (without valid implementation) or frameworks 
+     not validated or thoroughly tested
+g) Data extraction and reporting:
+   1) tool details, versions, programming language, license
+   2) offered features for modelling and simulating
+   3) work objective
+   4) description of the incident or attack that was modelled
+   5) details and particularities about the smart infrastructure
+   6) modelling features, e.g. simplicity, topology creation (for power and network)
+   7) scalability possibilities
+   8) abstractions and models of smart infrastructure components
+
+("simulation" OR "co-simulation") AND 
+("tools"      OR "framework" OR "software") AND
+("security"   OR "incident" OR "attack" OR "vulnerability") AND
+("smart"      OR "infrastructure" OR "cyber-physical system" OR "CPS")
+
