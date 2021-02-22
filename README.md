@@ -10,7 +10,8 @@ Journal: [Security and Privacy](https://onlinelibrary.wiley.com/journal/24756725
 
 ## Files
 
-1. ``feature-analysis.xlsx`` --> contains the separation of features per group
-2. ``features-revised-2020-01-22.txt`` --> list of all features extracted from papers
-3. ``stakeholder-analysis.txt`` --> lists the stakeholders per paper to create the table in the paper
-4. ``systematic-literature-review-parameters.txt`` --> Systematic Review of Literature (SLR) parameters.
+1. ``papers.txt`` --> list of papers used in the Systematic Review of Literature (SLR)
+2. ``feature-analysis.xlsx`` --> contains the separation of features per group
+3. ``features-revised-2020-01-22.txt`` --> list of all features extracted from papers
+4. ``stakeholder-analysis.txt`` --> lists the stakeholders per paper to create the table in the paper
+5. ``systematic-literature-review-parameters.txt`` --> SLR parameters.
