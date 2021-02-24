@@ -1,119 +1,119 @@
 ==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--
-Raw list of features (uncategorised) - [#PAPER-#ID]
+Raw list of features (uncategorised): #SEQUENTIAL-ID - [#PAPER-#ID]
 ==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--
-[01-01] Model topology (power and communications) consisting of $500$ inhabitants;
-[01-02] Ability to change data in smart meters;
-[01-03] Definition of attack scenarios;
-[01-04] Offered ways of investigating the impact of data modification in electricity pricing (and market bidding);
-[01-05] Modelling attacker profiles; 
-[01-06] Graphical output analysis for power related statistics (voltage, power mismatch) where modellers could select houses, transformers or buses for generating plots.
-[02-01] Definition of attack profiles, a generic configuration file used for specification of attacks for a set of behaviours (attack type, source and target components, frequency/intensity and attack start time.
-[02-02] Configuration of optional parameters for attacks such as packet size of a buffer overflow and options for a Denial-of-Service attack.
-[02-03] Three attacks are offered by the framework: i) malicious software infection when modifying measurement data obtained from the sensors; ii) DoS via buffer overflow (assuming devices have limited capacity); and iii) IP spoofing in the communication between devices, possibly leading to a man-in-the-middle attack.
-[02-04] Allows the installation of a port scanner in a SCADA component to identify services that are running so attackers could devise customised approaches as well as replay attacks to transmit eavesdropped data to smart devices.
-[02-05] Extensible library of attacks where modellers could create new ones (e.g. abstractions for attackers within the framework).
-[02-06] For output, the authors shown Power consumption sampled in RTU sensors and number of packets per second sent by attackers, however, since they are using Mosaik, they could use this tool capabilities.
-[02-07] Customisation in terms of new definitions of attacks by modellers.
-[03-01] Modelling equipment failure.
-[03-02] Considered also modelling message dropping and time delays.
-[03-03] Addressing impact of attacks in the smart infrastructure.
-[03-04] Unauthorized access to substations.
-[03-05] Possibility to devise attack and defense methodologies to improve security.
-[04-01] Offered a base simulation with a no attack (or any other stress) scenario.
-[04-02] Modelled attacks in smart meters to cause its unavailability.
-[04-03] The model has used realistic grid topologies.
-[04-04] DoS and DDoS attack in a consumer's smart meter.
-[04-05] DoS attack against utility server.
-[04-06] DDoS attack against utility server.
-[04-07] Output analysed was Number of consumers x received TCP packets (for base and attack scenarios), queue length (to demonstrate that a DoS/DDoS have occurred and packet statistics (average TCP packets received by smart meters and average TCP sessions). 
-[05-01] Modelling of different SCADA components such as RTU, PLC, MTU and protocols (Modbus/TCP and DNP3) and attacks towards smart meters.
-[05-02] Integration of external components to the simulation through the use of gates.
-[05-03] Four main attacks: i) DoS (using TCP SYN for flooding attacks); ii) man-in-the-middle; iii) eavesdropping; and iv) spoofing.
-[05-04] SCADASim provides a library with other attacks that can be plugged in into the simulator such as worm attack and DDoS.
-[05-05] Corrupted data is saved into a PLC, symbolising a spoofing attack.
-[05-06] Output showed power generation over time in the event of an attack (i.e. showing how power is affected) and MTU perceived service time.
-[06-01] Use of system-level simulation to understand and cope with the impact of cyber-attacks on the power system.
-[06-02] Cyber-aware state estimator using system-level communication (among devices).
-[06-03] Security assessment of cyber-attack impact, e.g. ability to detect misbehaviour and anomalies in CPS.
-[06-04] Predictive global state estimator at the the system level.
-[06-05] Detection of real-time cyber security situations.
-[06-06] Visualisation and control capabilities for quick responses at the energy management level.
-[06-07] Suggestion of appropriate CPSA-driven actions.
-[06-08] Logging with trust metrics, e.g., a mechanism that reflects the frequency of cyber-attack attempts on different components.
-[06-09] Identification of so called weak elements, to drive better responses by operators.
-[06-10] Application of user-generated rules for determining normal (baseline) operation.
-[06-11] Creation of cyber-attack scenarios, where some are built-in in the tool such as MITM, DoS and delay in devices such as routers and RTUs.
-[06-12] Ability to predict and evaluate system behaviour based on forecasts by inspecting future load profile and generation dispatch.
-[06-13] Contingency analysis, where it generates a list to determine the potential impact of each on the power system.
-[06-14] A data module that stores every component measurements both valid and invalid (termed in the work as legitimate and rogue respectively), flagging the ones the system suspects a problem is maybe occurring.
-[06-15] Flagging worst contingencies according to user defined thresholds.
-[06-16] A security assessment module where the tool presents all observations, logging, monitoring to operators so they can decide actions to keep stable power system operations.
-[06-17] Modelled a Disabled RTU Attack and a Communication Delay at a substation.
-[06-18] Network communication uses as input the topology, number of connected devices in the network, baud rate, packet size, MTU and propagation delay.
-[07-01] Temporal definition of malicious occurrences.
-[07-02] Model specific types of attacks to model attack surface and specific targets.
-[07-03] Definition of Attack Scenario Models (ASM), sub-divided into other three sub-modules named Attack Type (``what'' has happened), Attack Schema (``where'' the attack took place) and Attack Schedule (``when'' it occurred).
-[07-04] Attack Type involves system vulnerabilities whereas Attack Schema is related to entities. Attack Schedules are pertinent to the simulation.
-[07-05] Modelling of the following Attack Types: i) Energy Theft; ii) Energy Pushing (aims to destabilise energy flow by raising energy level); iii) Component Status Change (e.g. activating or deactivating components); iv) Link Disconnection (in the communication network); v) Input Value Manipulation (alteration of input values of components); vi) Output Value Manipulation (same, now for output); vii) Packet Dropping (dropping packets that would be routed differently); viii) Packet Cloning (creating copies of packets and inserting into the network).
-[07-06] Definition of Timed Attacks, happening according to a time-driven schedule.
-[07-07] Definition of different schema such as Single (only one component), Selected (group of entities), Typed (having the same type) and Global (targeted at all components).
-[07-08] Modelling attacks by choosing Type, Schema, Schedule as well as other property configurations (e.g. setting minimum and maximum values for variables such as voltage).
-[07-09] Definition of six properties: i) Frequency; ii) Threshold; iii) Interval; iv) Counting; v) Time; vi) Dependency (this is useful for determining abnormal behaviour).
-[07-10] Definition of Attack Scenarios (in the paper, they have explained a physical attack, an overload due to excess packets and a manipulation attack where attackers altered the contents of packets, for their case, the voltage).
-[07-11] Output shows number of attacks (according to the properties set in the tool) happening over time.
-[08-01] Characterisation of a multi-stage attack (termed a cyber kill chain) where attackers legitimately access a network and then start exploiting vulnerabilities to influence control elements.
-[08-02] Capture of evidences of ongoing attacks towards the infrastructure in terms of network traffic generated, power measurements and control commands.
-[08-03] Generation of regular traffic (symbolising a normal grid operation) and an attack traffic, characterised by a grid experiencing incidents caused by adversaries.
-[08-04] Ability to emulate traffic and to replay traffic.
-[08-05] Modelling of attack plans, containing a set of steps or actions an attacker uses to perform a malicious intervention.
-[08-06] Mapping of Network Topology to Power Topology.
-[09-01] Modelling data integrity attack (False Data Injection -- FDI), data availability attack (e.g. DoS or jamming) and combined attacks (combination of the previous ones).
-[09-02] Security metric that computes how many measurements are needed to keep attackers invisible against the BDD.
-[09-03] Communication network properties of interest for security: i) Communication topology; ii) Routing schemes (e.g. routing paths of packets); iii) Communication latency (delays); iv) Packet loss or missing data (number of dropped packets when communicating).
-[10-01] Investigation of synchronised cyber attacks to study stability, security and resilience of power grids.
-[10-02] Implementation of a simulation scenario where attackers increase the load of a power grid by compromising hardware.
-[10-03] Modelling of compromised hardware and synchronised behaviours.
-[10-04] Definition of attacks according to a specific scheduling.
-[10-05] Modelling of compromised PLC units situated on specific grid locations.
-[10-06] Output analysis was divided by non-synchronised and synchronised attacks showing graphs for Voltage over Time, showing calculated values per bus according to the power topology and also plots showing Power Load over Time.
-[11-01] Generation of random network traffic to mimic real world communications.
-[11-02] Collection of communication between components every five minutes using a packet sniffer tool (IP addresses, port numbers, packet length, protocol, number of bytes sent).
-[11-03] Two attacks were defined: manipulation of i) bid price; and ii) quantity (reduction of bid price and quantity by 50\% and another scenario where adversaries choose arbitrarily high and low price values).
-[11-04] Generation of random network noise to mimic realistic traffic patterns.
-[11-05] Output was energy prices during the day (showing the fluctuations) and the load demand of energy.
-[12-01] Definition of a neighbourhood comprising 300 households equipped with smart meters.
-[12-02] Ability to configure network parameters such as communication protocol, data rate and delay.
-[12-03] Creation of co-simulation scenarios to evaluate power and market market pricing.
-[12-04] Modelling of False Data Injection (change bid or modifying energy demand to substations) and DoS attack.
-[12-05] Definition of base co-simulation scenario showing optimal (or expected) results in a normal operation.
-[12-06] Combination of attacks (e.g. injecting false data and performing network overflow at the same time), studying how the power grid reacts as well as capturing network performance statistics.
-[12-07] Modification of network parameters for instance increasing or decreasing transmission delay of the point-to-point links as well as the data bandwidth between smart meters and the gateway.
-[12-08] Output showing energy demand/response due to changes in capacity bidding.
-[12-09] Power and price fluctuation given that the network is under normal operation or poor performance (due to varying parameters).
-[13-01] Investigate Data Integrity Attacks in smart infrastructures.
-[13-02] Definition of four attack templates: i) scaling attack (by applying a constant factor to be multiplied or divided by true measurements; ii) ramp attack (where adversaries perform gradual increments or decrements with respect to true measurements); iii) pulse attack (modify measurements using a pre-defined schedule in time); iv) random attack (true measurements are added or subtracted by a random variable).
-[13-03] Modelling of attacker objectives, e.g., disrupting system frequency and promoting load shedding schemes to take place or influence overall system reliability.
-[13-04] Let attackers select parameters where data quality alarms are circumvented, avoiding detection and increasing the success rate of incidents.
-[13-05] Output was a chart relating the System frequency over time.
-[13-06] Modelling of attack-defense experiments.
-[13-07] Use of real world data forecasts (obtained from New England/US).
-[14-01] Model attacks that may happen in different sectors of a power system, namely generation, distribution or control and consumption (authors categorised into Type I, II or III respectively).
-[14-02] Modelling different attack scenarios according to the sector (for their work they have effectively focused on Type III).
-[14-03] Consider defense mechanisms as counteractions against attacks: i) protecting command and price signals; ii) protecting smart meters and data centers; iii) attack detection and learning of demand patters over historical data; iv) load shedding and load relocation, by triggering shutting down or load curtailing to avoid peaks.
-[14-04] Identification of vulnerable assets within the infrastructure.
-[14-05] Modelling of spinning reserves to investigate load shedding.
-[14-06] Scenario considered adding specific servers, e.g. data server, which has distinct energy requirements for operation.
-[15-01] Modelling of challenges in networks.
-[15-02] Generating specific ns-3 code according to network topology.
-[15-03] Packet animation (using third-party tool called NetAnim).
-[15-04] Modelling random failures during a challenge period (from time t1 to time t2).
-[15-05] Topological properties of the network is used to determine critical elements within the infrastructure.
-[15-06] Use of a n-sided polygon to model a large-scale disaster encompassing a large area.
-[15-07] For wireless communication, a ns-3 propagation loss model with mobility parameters were enacted to simulate realistic patterns.
-[15-08] Traffic properties used constant bit rates between each node pair, without congestion, investigating network aggregate performance under challenges and aggregated packet delivery ratio as metric.
-[15-09] Use of synthetic topology generators using an auxiliary tool called (KU-LoCGen) where generated topologies share characteristics with geographic locations.
-[15-10] Modelling parameters for topological characteristics of networks such as i) number of nodes; ii) number of edges; iii) maximum degree; iv) average degree; v) clustering coefficient; vi) network diameter; vii) average hopcount; viii) node betweenness; and ix) link betweenness.
-[15-11] Modelling hybrid communication models, wired, wireless and mixed.
+F001 - [01-01] Model topology (power and communications) consisting of $500$ inhabitants;
+F002 - [01-02] Ability to change data in smart meters;
+F003 - [01-03] Definition of attack scenarios;
+F004 - [01-04] Offered ways of investigating the impact of data modification in electricity pricing (and market bidding);
+F005 - [01-05] Modelling attacker profiles; 
+F006 - [01-06] Graphical output analysis for power related statistics (voltage, power mismatch) where modellers could select houses, transformers or buses for generating plots.
+F007 - [02-01] Definition of attack profiles, a generic configuration file used for specification of attacks for a set of behaviours (attack type, source and target components, frequency/intensity and attack start time.
+F008 - [02-02] Configuration of optional parameters for attacks such as packet size of a buffer overflow and options for a Denial-of-Service attack.
+F009 - [02-03] Three attacks are offered by the framework: i) malicious software infection when modifying measurement data obtained from the sensors; ii) DoS via buffer overflow (assuming devices have limited capacity); and iii) IP spoofing in the communication between devices, possibly leading to a man-in-the-middle attack.
+F010 - [02-04] Allows the installation of a port scanner in a SCADA component to identify services that are running so attackers could devise customised approaches as well as replay attacks to transmit eavesdropped data to smart devices.
+F011 - [02-05] Extensible library of attacks where modellers could create new ones (e.g. abstractions for attackers within the framework).
+F012 - [02-06] For output, the authors shown Power consumption sampled in RTU sensors and number of packets per second sent by attackers, however, since they are using Mosaik, they could use this tool capabilities.
+F013 - [02-07] Customisation in terms of new definitions of attacks by modellers.
+F014 - [03-01] Modelling equipment failure.
+F015 - [03-02] Considered also modelling message dropping and time delays.
+F016 - [03-03] Addressing impact of attacks in the smart infrastructure.
+F017 - [03-04] Unauthorized access to substations.
+F018 - [03-05] Possibility to devise attack and defense methodologies to improve security.
+F019 - [04-01] Offered a base simulation with a no attack (or any other stress) scenario.
+F020 - [04-02] Modelled attacks in smart meters to cause its unavailability.
+F021 - [04-03] The model has used realistic grid topologies.
+F022 - [04-04] DoS and DDoS attack in a consumer's smart meter.
+F023 - [04-05] DoS attack against utility server.
+F024 - [04-06] DDoS attack against utility server.
+F025 - [04-07] Output analysed was Number of consumers x received TCP packets (for base and attack scenarios), queue length (to demonstrate that a DoS/DDoS have occurred and packet statistics (average TCP packets received by smart meters and average TCP sessions). 
+F026 - [05-01] Modelling of different SCADA components such as RTU, PLC, MTU and protocols (Modbus/TCP and DNP3) and attacks towards smart meters.
+F027 - [05-02] Integration of external components to the simulation through the use of gates.
+F028 - [05-03] Four main attacks: i) DoS (using TCP SYN for flooding attacks); ii) man-in-the-middle; iii) eavesdropping; and iv) spoofing.
+F029 - [05-04] SCADASim provides a library with other attacks that can be plugged in into the simulator such as worm attack and DDoS.
+F030 - [05-05] Corrupted data is saved into a PLC, symbolising a spoofing attack.
+F031 - [05-06] Output showed power generation over time in the event of an attack (i.e. showing how power is affected) and MTU perceived service time.
+F032 - [06-01] Use of system-level simulation to understand and cope with the impact of cyber-attacks on the power system.
+F033 - [06-02] Cyber-aware state estimator using system-level communication (among devices).
+F034 - [06-03] Security assessment of cyber-attack impact, e.g. ability to detect misbehaviour and anomalies in CPS.
+F035 - [06-04] Predictive global state estimator at the the system level.
+F036 - [06-05] Detection of real-time cyber security situations.
+F037 - [06-06] Visualisation and control capabilities for quick responses at the energy management level.
+F038 - [06-07] Suggestion of appropriate CPSA-driven actions.
+F039 - [06-08] Logging with trust metrics, e.g., a mechanism that reflects the frequency of cyber-attack attempts on different components.
+F030 - [06-09] Identification of so called weak elements, to drive better responses by operators.
+F041 - [06-10] Application of user-generated rules for determining normal (baseline) operation.
+F042 - [06-11] Creation of cyber-attack scenarios, where some are built-in in the tool such as MITM, DoS and delay in devices such as routers and RTUs.
+F043 - [06-12] Ability to predict and evaluate system behaviour based on forecasts by inspecting future load profile and generation dispatch.
+F044 - [06-13] Contingency analysis, where it generates a list to determine the potential impact of each on the power system.
+F045 - [06-14] A data module that stores every component measurements both valid and invalid (termed in the work as legitimate and rogue respectively), flagging the ones the system suspects a problem is maybe occurring.
+F046 - [06-15] Flagging worst contingencies according to user defined thresholds.
+F047 - [06-16] A security assessment module where the tool presents all observations, logging, monitoring to operators so they can decide actions to keep stable power system operations.
+F048 - [06-17] Modelled a Disabled RTU Attack and a Communication Delay at a substation.
+F049 - [06-18] Network communication uses as input the topology, number of connected devices in the network, baud rate, packet size, MTU and propagation delay.
+F050 - [07-01] Temporal definition of malicious occurrences.
+F051 - [07-02] Model specific types of attacks to model attack surface and specific targets.
+F052 - [07-03] Definition of Attack Scenario Models (ASM), sub-divided into other three sub-modules named Attack Type (``what'' has happened), Attack Schema (``where'' the attack took place) and Attack Schedule (``when'' it occurred).
+F053 - [07-04] Attack Type involves system vulnerabilities whereas Attack Schema is related to entities. Attack Schedules are pertinent to the simulation.
+F054 - [07-05] Modelling of the following Attack Types: i) Energy Theft; ii) Energy Pushing (aims to destabilise energy flow by raising energy level); iii) Component Status Change (e.g. activating or deactivating components); iv) Link Disconnection (in the communication network); v) Input Value Manipulation (alteration of input values of components); vi) Output Value Manipulation (same, now for output); vii) Packet Dropping (dropping packets that would be routed differently); viii) Packet Cloning (creating copies of packets and inserting into the network).
+F055 - [07-06] Definition of Timed Attacks, happening according to a time-driven schedule.
+F056 - [07-07] Definition of different schema such as Single (only one component), Selected (group of entities), Typed (having the same type) and Global (targeted at all components).
+F057 - [07-08] Modelling attacks by choosing Type, Schema, Schedule as well as other property configurations (e.g. setting minimum and maximum values for variables such as voltage).
+F058 - [07-09] Definition of six properties: i) Frequency; ii) Threshold; iii) Interval; iv) Counting; v) Time; vi) Dependency (this is useful for determining abnormal behaviour).
+F059 - [07-10] Definition of Attack Scenarios (in the paper, they have explained a physical attack, an overload due to excess packets and a manipulation attack where attackers altered the contents of packets, for their case, the voltage).
+F060 - [07-11] Output shows number of attacks (according to the properties set in the tool) happening over time.
+F061 - [08-01] Characterisation of a multi-stage attack (termed a cyber kill chain) where attackers legitimately access a network and then start exploiting vulnerabilities to influence control elements.
+F062 - [08-02] Capture of evidences of ongoing attacks towards the infrastructure in terms of network traffic generated, power measurements and control commands.
+F063 - [08-03] Generation of regular traffic (symbolising a normal grid operation) and an attack traffic, characterised by a grid experiencing incidents caused by adversaries.
+F064 - [08-04] Ability to emulate traffic and to replay traffic.
+F065 - [08-05] Modelling of attack plans, containing a set of steps or actions an attacker uses to perform a malicious intervention.
+F066 - [08-06] Mapping of Network Topology to Power Topology.
+F067 - [09-01] Modelling data integrity attack (False Data Injection -- FDI), data availability attack (e.g. DoS or jamming) and combined attacks (combination of the previous ones).
+F068 - [09-02] Security metric that computes how many measurements are needed to keep attackers invisible against the BDD.
+F069 - [09-03] Communication network properties of interest for security: i) Communication topology; ii) Routing schemes (e.g. routing paths of packets); iii) Communication latency (delays); iv) Packet loss or missing data (number of dropped packets when communicating).
+F070 - [10-01] Investigation of synchronised cyber attacks to study stability, security and resilience of power grids.
+F071 - [10-02] Implementation of a simulation scenario where attackers increase the load of a power grid by compromising hardware.
+F072 - [10-03] Modelling of compromised hardware and synchronised behaviours.
+F073 - [10-04] Definition of attacks according to a specific scheduling.
+F074 - [10-05] Modelling of compromised PLC units situated on specific grid locations.
+F075 - [10-06] Output analysis was divided by non-synchronised and synchronised attacks showing graphs for Voltage over Time, showing calculated values per bus according to the power topology and also plots showing Power Load over Time.
+F076 - [11-01] Generation of random network traffic to mimic real world communications.
+F077 - [11-02] Collection of communication between components every five minutes using a packet sniffer tool (IP addresses, port numbers, packet length, protocol, number of bytes sent).
+F078 - [11-03] Two attacks were defined: manipulation of i) bid price; and ii) quantity (reduction of bid price and quantity by 50\% and another scenario where adversaries choose arbitrarily high and low price values).
+F079 - [11-04] Generation of random network noise to mimic realistic traffic patterns.
+F080 - [11-05] Output was energy prices during the day (showing the fluctuations) and the load demand of energy.
+F081 - [12-01] Definition of a neighbourhood comprising 300 households equipped with smart meters.
+F082 - [12-02] Ability to configure network parameters such as communication protocol, data rate and delay.
+F083 - [12-03] Creation of co-simulation scenarios to evaluate power and market market pricing.
+F084 - [12-04] Modelling of False Data Injection (change bid or modifying energy demand to substations) and DoS attack.
+F085 - [12-05] Definition of base co-simulation scenario showing optimal (or expected) results in a normal operation.
+F086 - [12-06] Combination of attacks (e.g. injecting false data and performing network overflow at the same time), studying how the power grid reacts as well as capturing network performance statistics.
+F087 - [12-07] Modification of network parameters for instance increasing or decreasing transmission delay of the point-to-point links as well as the data bandwidth between smart meters and the gateway.
+F088 - [12-08] Output showing energy demand/response due to changes in capacity bidding.
+F089 - [12-09] Power and price fluctuation given that the network is under normal operation or poor performance (due to varying parameters).
+F090 - [13-01] Investigate Data Integrity Attacks in smart infrastructures.
+F091 - [13-02] Definition of four attack templates: i) scaling attack (by applying a constant factor to be multiplied or divided by true measurements; ii) ramp attack (where adversaries perform gradual increments or decrements with respect to true measurements); iii) pulse attack (modify measurements using a pre-defined schedule in time); iv) random attack (true measurements are added or subtracted by a random variable).
+F092 - [13-03] Modelling of attacker objectives, e.g., disrupting system frequency and promoting load shedding schemes to take place or influence overall system reliability.
+F093 - [13-04] Let attackers select parameters where data quality alarms are circumvented, avoiding detection and increasing the success rate of incidents.
+F094 - [13-05] Output was a chart relating the System frequency over time.
+F095 - [13-06] Modelling of attack-defense experiments.
+F096 - [13-07] Use of real world data forecasts (obtained from New England/US).
+F097 - [14-01] Model attacks that may happen in different sectors of a power system, namely generation, distribution or control and consumption (authors categorised into Type I, II or III respectively).
+F098 - [14-02] Modelling different attack scenarios according to the sector (for their work they have effectively focused on Type III).
+F099 - [14-03] Consider defense mechanisms as counteractions against attacks: i) protecting command and price signals; ii) protecting smart meters and data centers; iii) attack detection and learning of demand patters over historical data; iv) load shedding and load relocation, by triggering shutting down or load curtailing to avoid peaks.
+F100 - [14-04] Identification of vulnerable assets within the infrastructure.
+F101 - [14-05] Modelling of spinning reserves to investigate load shedding.
+F102 - [14-06] Scenario considered adding specific servers, e.g. data server, which has distinct energy requirements for operation.
+F103 - [15-01] Modelling of challenges in networks.
+F104 - [15-02] Generating specific ns-3 code according to network topology.
+F105 - [15-03] Packet animation (using third-party tool called NetAnim).
+F106 - [15-04] Modelling random failures during a challenge period (from time t1 to time t2).
+F107 - [15-05] Topological properties of the network is used to determine critical elements within the infrastructure.
+F108 - [15-06] Use of a n-sided polygon to model a large-scale disaster encompassing a large area.
+F109 - [15-07] For wireless communication, a ns-3 propagation loss model with mobility parameters were enacted to simulate realistic patterns.
+F110 - [15-08] Traffic properties used constant bit rates between each node pair, without congestion, investigating network aggregate performance under challenges and aggregated packet delivery ratio as metric.
+F111 - [15-09] Use of synthetic topology generators using an auxiliary tool called (KU-LoCGen) where generated topologies share characteristics with geographic locations.
+F112 - [15-10] Modelling parameters for topological characteristics of networks such as i) number of nodes; ii) number of edges; iii) maximum degree; iv) average degree; v) clustering coefficient; vi) network diameter; vii) average hopcount; viii) node betweenness; and ix) link betweenness.
+F113 - [15-11] Modelling hybrid communication models, wired, wireless and mixed.
 
 %==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--==--
 Categorisation of features into seven parts:
@@ -189,7 +189,6 @@ F. Output:
 [15-03] Packet animation (using third-party tool called NetAnim).
 
 G. Modelling features
-
 1. MODELLING ATTACKERS AND SCENARIOS
 [01-03] Definition of attack scenarios;
 [01-05] Modelling attacker profiles; 
